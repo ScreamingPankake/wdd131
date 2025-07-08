@@ -1,0 +1,40 @@
+@media screen and (min-width: 600px) {
+
+    main figure img {
+        max-width: 50%;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    #hamburger {
+        display: none;
+    }
+
+
+    main figure img {
+        max-width: 33%;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 799px) {
+    #nav-links {
+        display: none;
+    }
+
+    #hamburger {
+    display: block;
+    }
+
+}
+

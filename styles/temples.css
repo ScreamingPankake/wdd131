@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+header {
+    background-color: #334576;
+    color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h1 {
+    justify-self: center;
+}
+
+main figure {
+    margin: 10px;
+}
+
+main figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #334576;
+}
+
+header p {
+    font-size: 30px;
+}
+
+#hamburger {
+    background: none;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
