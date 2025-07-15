@@ -1,0 +1,153 @@
+
+
+:root {
+    --backgroundcolor: #fffecc;
+    --maincolor: #F5B050;
+    --secondcolor: #FF532D;
+    --darkcolor: #40423B;
+    --accent: #A1C7AA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--backgroundcolor);
+    padding: 20px;
+}
+
+#title {
+    background-color: var(--maincolor);
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-self: center;
+    font-size: 50px;
+    border: 3px solid var(--darkcolor);
+    border-radius: 20px;
+}
+
+main {
+    background-color: var(--backgroundcolor);
+    font-family: roboto, sans-serif;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 10px var(--darkcolor);
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(var(--backgroundcolor), #00000000);
+}
+
+.data {
+    margin: 30px;
+    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 2px solid var(--darkcolor);
+    background-color: var(--maincolor);
+}
+
+.data h2 {
+    justify-self: center;
+    font-size: 40px;
+}
+
+.data ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+
+.data li {
+    justify-self: center;
+}
+
+
+.weather {
+    margin: 30px;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: 2px solid var(--darkcolor);
+    background-color: var(--maincolor);
+}
+
+.weather img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.weather h2 {
+    justify-self: center;
+    font-size: 40px;
+}
+
+.weather ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+
+.weather li {
+    justify-self: center;
+}
+
+footer {
+    display: block;
+    background-color: var(--darkcolor);
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+    #hero {
+        position: relative;
+    }
+
+    .data {
+        width: 400px;
+        position: absolute;
+        z-index: 1;
+        top: 250px;
+    }
+
+    .weather {
+        width: 400px;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+        bottom: 550px;
+        right: 20px;
+    }
+
+    .weather h1, .weather img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
