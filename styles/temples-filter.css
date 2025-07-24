@@ -68,3 +68,23 @@ header p {
     border: none;
     cursor: pointer;
 }
+
+#new-filter:hover {
+    color: orange;
+}
+
+#old-filter:hover {
+    color: orange;
+}
+
+#large-filter:hover {
+    color: orange;
+}
+
+#small-filter:hover {
+    color: orange;
+}
+
+#home:hover {
+    color: orange;
+}
