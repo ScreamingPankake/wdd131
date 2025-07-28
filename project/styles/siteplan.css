@@ -1,0 +1,49 @@
+:root {
+    --title-font: "Special Gothic Expancded One", sans-serif;
+    --gen-font: "Oswald", sans-serif;
+
+    --primary: #9792E3;
+    --secondary: #61E786;
+    --background: #48435C;
+    --accent: #EDFFEC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--background);
+    color: var(--accent);
+}
+
+h1 {
+    font-family: var(--title-font);
+    padding: 10px;
+}
+
+header p {
+    padding: 20px;
+    font-family: var(--gen-font);
+    font-size: 25px;
+}
+
+main {
+    background-color: var(--secondary);
+    font-family: var(--gen-font);
+    font-size: 25px;
+}
+
+main p {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--background);
+    font-family: var(--gen-font);
+    font-size: 25px;
+    padding: 10px;
+    color: var(--accent);
+}
