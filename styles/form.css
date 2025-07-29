@@ -154,3 +154,15 @@ footer {
     color: white;
     text-align: center;
 }
+
+/* Review page */
+#review {
+    display: block;
+    margin-top: 5rem;
+    font-family: var(--font);
+    text-align: center;
+    align-content: center;
+    border: 2px solid gray;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
