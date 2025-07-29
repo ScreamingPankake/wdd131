@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan Atwood">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Product Review Form</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <p>Product Name</p>
+            <select name="product-sel" id="product-sel" required>
+                <option disabled selected>Select a Product ...</option>
+                <option value=""></option>
+            </select>
+            <p>Rate Us</p>
+            <div class="stars">
+	            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+	            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+	            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+	            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+	            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+            </div>
+            <div>
+                <p>Date of Installation</p>
+                <label for="current-date"><input type="date" id="current-date" name="date" required></label>
+            </div>
+            <div class="useful">
+                <p>Which features did you find useful in the product?</p>
+                <p id="italasize">(Check all that apply)</p>
+                <label for="design"><input type="checkbox" id="design" name="useful" value="design">Design</label>
+                <label for="durability"><input type="checkbox" id="durability" name="useful" value="durability">Durability</label>
+                <label for="ease-of-use"><input type="checkbox" id="ease-of-use" name="useful" value="ease-of-use">Ease Of Use</label>
+                <label for="performance"><input type="checkbox" id="performance" name="useful" value="performance">Performance</label>
+            </div>
+            <div>
+                <p>Written Review </p>
+                <label for="review"><textarea name="review" id="review"></textarea></label>
+            </div>
+            <div>
+                <p>Your Name (Optional)</p>
+                <label for="name"><input type="text" id="name" name="name"></label>          
+            </div>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer id="footer">
+        <p>Nathan Atwood</p>
+    </footer>
+</body>
+</html>
